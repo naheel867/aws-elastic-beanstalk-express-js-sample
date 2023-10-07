@@ -12,7 +12,7 @@ pipeline {
                 // Workaround for npm cache issue
                 sh 'echo "Setting up permissions for npm cache"'
                 sh 'chown -R node:node /home/node/.npm || true'
-                sh 'npm config set cache /home/node/.npm --global'
+                sh 'npm config set cache /home/node/.npm'
             }
         }
         stage('Build') {
