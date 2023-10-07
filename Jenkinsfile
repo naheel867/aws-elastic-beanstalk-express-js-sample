@@ -2,6 +2,8 @@ pipeline {
     agent {
         docker {
             image 'node:16'
+	    // Run as 'node' user inside the container
+	    args '-u node'
         }
     }
     stages {
