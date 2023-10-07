@@ -13,7 +13,7 @@ pipeline {
                 sh 'echo "Setting up permissions for npm cache"'
                 // Adjusted the path based on typical Node.js Docker image structure
                 sh 'mkdir -p /home/node/.npm && chown -R 115:121 /home/node/.npm || true'
-                sh 'npm config set cache /home/node/.npm --global'
+                sh 'npm config set cache /home/node/.npm'
             }
         }
         stage('Build') {
