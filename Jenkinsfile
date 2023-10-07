@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'node:16'
             // Run as the Jenkins user inside the container (using your provided UID and GID)
-            args '-u 1000:1000'
+            args '-u 0:0'
         }
     }
     stages {
