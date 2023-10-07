@@ -1,4 +1,3 @@
--Dorg.jenkinsci.plugins.durabletask.BourneShellScript.LAUNCH_DIAGNOSTICS=true
 pipeline {
     agent {
         docker {
