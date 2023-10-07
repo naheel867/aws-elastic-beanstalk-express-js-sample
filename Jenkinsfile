@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'node:16'
             // Run as 'node' user inside the container
-            args '-u 115:121'
+            args '-u node 115:121'
         }
     }
     stages {
